@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ตะกร้าสินค้า - Femme Boutique</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Femme Boutique</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">หน้าหลัก</a></li>
+          <li><a href="products.html">สินค้า</a></li>
+          <li><a href="contact.html">ติดต่อ</a></li>
+          <li><a href="login.html" id="login-btn">เข้าสู่ระบบ</a></li>
+          <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="cart-page">
+    <div class="container">
+      <h2>ตะกร้าสินค้าของคุณ</h2>
+      <div class="cart-container">
+        <div class="cart-items" id="cart-items">
+          <!-- รายการสินค้าในตะกร้าจะถูกเพิ่มโดย JavaScript -->
+          <p class="empty-cart">ตะกร้าสินค้าของคุณว่างเปล่า</p>
+        </div>
+        <div class="cart-summary">
+          <h3>สรุปคำสั่งซื้อ</h3>
+          <div class="summary-details">
+            <p>จำนวนสินค้า: <span id="total-items">0</span> ชิ้น</p>
+            <p>รวมทั้งหมด: <span id="total-price">0</span> บาท</p>
+          </div>
+          <button class="btn checkout-btn" id="checkout-btn">ดำเนินการชำระเงิน</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="copyright">
+      <p>&copy; 2025 Femme Boutique. สงวนลิขสิทธิ์.</p>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+
+</html>

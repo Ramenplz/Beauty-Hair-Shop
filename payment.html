@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ชำระเงิน - Femme Boutique</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Femme Boutique</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">หน้าหลัก</a></li>
+          <li><a href="products.html">สินค้า</a></li>
+          <li><a href="contact.html">ติดต่อ</a></li>
+          <li><a href="login.html" id="login-btn">เข้าสู่ระบบ</a></li>
+          <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="payment-page">
+    <div class="container">
+      <h2>ชำระเงิน</h2>
+      <div class="payment-container">
+        <div class="order-summary">
+          <h3>สรุปคำสั่งซื้อ</h3>
+          <div class="order-items" id="order-items">
+            <!-- รายการสินค้าจะถูกเพิ่มโดย JavaScript -->
+          </div>
+          <div class="order-total">
+            <p>รวมทั้งหมด: <span id="order-total-price">0</span> บาท</p>
+          </div>
+        </div>
+
+        <div class="payment-form">
+          <h3>ข้อมูลการชำระเงิน</h3>
+          <form id="payment-form">
+            <div class="form-group">
+              <label for="card-name">ชื่อบนบัตร</label>
+              <input type="text" id="card-name" required>
+            </div>
+            <div class="form-group">
+              <label for="card-number">หมายเลขบัตรเครดิต</label>
+              <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="card-expiry">วันหมดอายุ</label>
+                <input type="text" id="card-expiry" placeholder="MM/YY" required>
+              </div>
+              <div class="form-group">
+                <label for="card-cvc">รหัส CVC</label>
+                <input type="text" id="card-cvc" placeholder="123" required>
+              </div>
+            </div>
+            <button type="submit" class="btn">ยืนยันการชำระเงิน</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-section">
+        <h3>เกี่ยวกับเรา</h3>
+        <p>Femme Boutique นำเสนอสินค้าแฟชั่นผู้หญิงคุณภาพสูงในราคาที่เป็นมิตร</p>
+      </div>
+      <div class="footer-section">
+        <h3>ลิงก์ด่วน</h3>
+        <ul>
+          <li><a href="index.html">หน้าหลัก</a></li>
+          <li><a href="products.html">สินค้า</a></li>
+          <li><a href="contact.html">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>ติดต่อเรา</h3>
+        <p>Email: info@femmeboutique.com</p>
+        <p>โทร: 02-123-4567</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Femme Boutique. สงวนลิขสิทธิ์.</p>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script src="js/payment.js"></script>
+</body>
+
+</html>
