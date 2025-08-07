@@ -1,4 +1,3 @@
-// ระบบตะกร้าสินค้า
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // เพิ่มสินค้าในตะกร้า

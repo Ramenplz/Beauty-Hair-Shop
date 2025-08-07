@@ -71,7 +71,6 @@ function displayFeaturedProducts() {
     const featuredContainer = document.getElementById('featured-products');
     
     if (featuredContainer) {
-        // เลือกสินค้ามาแสดง 4 ชิ้น
         const featuredProducts = products.slice(0, 4);
         
         featuredProducts.forEach(product => {

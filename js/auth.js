@@ -1,4 +1,3 @@
-// ระบบล็อกอินแบบไม่ต้องตรวจสอบ
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('login-form');
     const authMessage = document.getElementById('auth-message');

@@ -1,4 +1,3 @@
-// payment.js - ระบบชำระเงิน
 document.addEventListener('DOMContentLoaded', function() {
     // แสดงรายการสินค้าและยอดรวม
     displayOrderSummary();
@@ -52,7 +51,6 @@ function processPayment() {
         return;
     }
     
-    // สร้างข้อมูลการชำระเงิน (ในที่นี้เป็นตัวอย่าง ไม่ได้เชื่อมต่อกับระบบชำระเงินจริง)
     const paymentData = {
         cardName: document.getElementById('card-name').value,
         cardNumber: document.getElementById('card-number').value,
@@ -63,9 +61,7 @@ function processPayment() {
     localStorage.removeItem('cart');
     updateCartCount();
     
-    // แสดงข้อความสำเร็จ
     alert('การชำระเงินเสร็จสิ้น! ขอบคุณสำหรับการสั่งซื้อ');
     
-    // กลับไปหน้าหลัก
     window.location.href = 'index.html';
 }

@@ -1,5 +1,3 @@
-/* ตัวแปรสี */
-/* ตัวแปรสี */
 :root {
   --primary-color: #ff85a2;
   --secondary-color: #ffd6e0;
@@ -11,10 +9,10 @@
   --border-color: #eee;
 }
 
-/* ฟอนต์ Kanit */
+
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
 
-/* Reset และ Base Styles */
+
 * {
   margin: 0;
   padding: 0;
