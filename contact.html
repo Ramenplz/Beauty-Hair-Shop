@@ -4,42 +4,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ติดต่อเรา - Femme Boutique</title>
+  <title>เกี่ยวกับเรา - Beauty Hair Shop</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <!-- Header -->
   <header>
     <div class="container">
       <div class="logo">
-        <h1>Femme Boutique</h1>
+        <h1>Beauty Hair Shop</h1>
       </div>
       <nav>
         <ul>
           <li><a href="index.html">หน้าหลัก</a></li>
           <li><a href="products.html">สินค้า</a></li>
-          <li><a href="contact.html">ติดต่อ</a></li>
+          <li><a class="active" href="contact.html">เกี่ยวกับเรา</a></li>
           <li><a href="login.html" id="login-btn">เข้าสู่ระบบ</a></li>
-          <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+          <li><a href="cart.html"><i class="fas fa-shopping-cart"></i>
+              <span id="cart-count">0</span></a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <!-- About Us -->
+  <section class="about-us">
+    <div class="container">
+      <h2>เกี่ยวกับเรา</h2>
+      <p>
+        <strong>Beauty Hair Shop</strong> คือร้านจำหน่ายผลิตภัณฑ์ดูแลเส้นผมคุณภาพพรีเมียม
+        ที่คัดสรรสินค้าจากแบรนด์ชั้นนำทั้งในและต่างประเทศ
+        เพื่อให้คุณได้สัมผัสกับความสวยงามและสุขภาพเส้นผมที่ดีที่สุด
+        เรามีทั้งผลิตภัณฑ์บำรุงเส้นผม, อุปกรณ์จัดแต่งทรงผม,
+        และบริการให้คำปรึกษาจากผู้เชี่ยวชาญด้านเส้นผม
+      </p>
+      <p>
+        เราเชื่อว่าทุกคนมีความงามในแบบของตัวเอง และเส้นผมคือหนึ่งในความงามที่ควรได้รับการดูแลเป็นพิเศษ
+        ภารกิจของเราคือการช่วยให้ลูกค้ามั่นใจในทุกวันด้วยผมที่สวยและสุขภาพดี
+      </p>
+    </div>
+  </section>
+
+  <!-- Our Team -->
+  <section class="our-team">
+    <div class="container">
+      <h2>ทีมงานของเรา</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://www.harleytherapy.co.uk/counselling/wp-content/uploads/16297800391_5c6e812832.jpg" alt="ช่างทำผม">
+          <h3>คุณมยุรี</h3>
+          <p>ผู้เชี่ยวชาญด้านการบำรุงเส้นผม</p>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1641487011671-0a4d29916ab4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI5fHx8ZW58MHx8fHx8" alt="ช่างทำผม">
+          <h3>คุณธนวัฒน์</h3>
+          <p>ช่างทำผมมืออาชีพ</p>
+        </div>
+        <div class="team-member">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP_Kn20a6U7zRkXc6iqQMx3xZeDufLveZdUg&s" alt="ผู้เชี่ยวชาญเส้นผม">
+          <h3>คุณกาญจนา</h3>
+          <p>ที่ปรึกษาด้านผลิตภัณฑ์</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section class="contact-page">
     <div class="container">
       <h2>ติดต่อเรา</h2>
       <div class="contact-container">
         <div class="contact-info">
           <h3>ข้อมูลติดต่อ</h3>
-          <p><i class="fas fa-map-marker-alt"></i> 123 ถนนแฟชั่น, เขตบางรัก, กรุงเทพฯ 10500</p>
+          <p><i class="fas fa-map-marker-alt"></i> 123 ถนนสุขุมวิท กรุงเทพฯ 10110</p>
           <p><i class="fas fa-phone"></i> 02-123-4567</p>
-          <p><i class="fas fa-envelope"></i> info@femmeboutique.com</p>
+          <p><i class="fas fa-envelope"></i> contact@beautyhairshop.com</p>
+          <h4>เวลาทำการ</h4>
+          <p>จันทร์ - ศุกร์ : 09.00 - 20.00 น.</p>
+          <p>เสาร์ - อาทิตย์ : 10.00 - 18.00 น.</p>
           <div class="social-media">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -54,7 +104,7 @@
               <input type="text" id="name" required>
             </div>
             <div class="form-group">
-              <label for="email">อีเมล</label>
+              <label for="contact-email">อีเมล</label>
               <input type="email" id="contact-email" required>
             </div>
             <div class="form-group">
@@ -68,9 +118,20 @@
     </div>
   </section>
 
+  <!-- Google Map -->
+  <section class="map-section">
+    <div class="container">
+      <h2>แผนที่ร้าน</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.750888225097!2d100.529!3d13.746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ec99f23b2f9%3A0x2f3c0b8e76e85f0a!2z4Lia4Lij4Liw4Lih4LiK4Lit4LiB4LmM!5e0!3m2!1sth!2sth!4v1675699400000"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="copyright">
-      <p>&copy; 2025 Femme Boutique. สงวนลิขสิทธิ์.</p>
+      <p>&copy; 2025 Beauty Hair Shop. สงวนลิขสิทธิ์.</p>
     </div>
   </footer>
 
